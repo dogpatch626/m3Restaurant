@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styling/restaurantStyles.css"> 
+    <title>contact us</title>
+</head>
+<body>
+    <style>
+        select, textarea {
+    margin: 12px 0;
+    font-size: 1em;
+}
+
+input[type=submit] {
+    font-size: 1.2em;
+    background-color: #546a7b;
+    color: #fef9ff;
+    padding: 4px 8px;
+}
+
+input[type=submit]:hover {
+    background-color: #f2eded;
+    color: #546a7b;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    border: 2px solid #0d1f2d;
+    border-radius: 3px;
+    background-color: #fff;
+    resize: none;
+}
+    </style>
+    <header>
+        <h3>Contact Us</h5>
+            <hr />
+           <h1 style="text-align: center;">New York Pizzaria</h1>
+           <hr />
+           
+    </header>
+    <!-- Navbar Start -->
+    <nav>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="index.html"> <button class="btn btn-dark " style="width:100%;">Home </button> </a>
+            </div>
+            <div class="col-md-4">
+                <a href="menu.html">  <button class="btn btn-dark" style="width:100%;"> Menu</button> </a>
+            </div>
+                <div class="col-md-4">
+                    <a href="contactUs.html"> <button class="btn btn-dark " style="width:100%;">  Contact Us </button></a>
+            </div>
+       <div class="clear-float"></div>
+    </div>
+    <hr>
+       </nav>
+      
+       <!-- Navbar End  -->
+       <!-- main content of the page including the forms -->
+        <section>
+            <center>
+                <form action="submit.html" method="POST">
+                    <Label for="name"><em>Name:</em></Label>
+                    <input type="text" id="name">
+                    <br />
+                    <br />
+          
+                    <label for="email">Email:</label> 
+                    <input type="text" id="email">
+                    <br />
+                    <br />
+          
+                    <label for="number">Phone Number:</label>
+                    <input type="text" id="number">
+                    <br />
+                    <br />
+                    <!-- Select drop down  -->
+                    <label for="contact">Reason For inquiry</label>
+                   <select name="contact" id="contact">
+                          <option value="catering" selected>Catering</option>
+                          <option value="PrivateParty" >Private party</option>
+                          <option value="Feedback">Feedback</option>
+                          <option value="other">other</option>
+                   </select>
+                   <!-- end of select dropd down -->
+                   <br />
+                   <br />
+                   <label for="addInfo">Additional Information:</label>
+                   <br />
+                   <textarea name="addInfo" id="addInfo" cols="30" rows="10"></textarea>
+                    <br />
+                   
+
+                        <p>Have you Been to the restaurant?
+                        <input type="radio" id="choice1" name="questionnaire" value="yes">
+                        <label for="choice1">Yes</label>
+                        <input type="radio" id="choice2" name="questionnaire" value="no">
+                        <label for="choice2">No</label></p>
+                        <br />
+                        <br />
+                       
+                        <p>Best days to conact you:
+                            <input type="checkbox" id="choice1" name="contactdays" value="mon">
+                            <label for="choice1">Mon</label>
+                            <input type="checkbox" id="choice2" name="contactdays" value="tues">
+                            <label for="choice2">Tues</label>
+                            <input type="checkbox" id="choice3" name="contactdays" value="wed">
+                            <label for="choice3">Wed</label>
+                            <input type="checkbox" id="choice4" name="contactdays" value="thurs">
+                            <label for="choice4">Thurs</label>
+                            <input type="checkbox" id="choice5" name="contactdays" value="fri">
+                            <label for="choice5">Fri</label></p>
+
+
+                            
+                            <input type="submit" value="submit" name="submit">
+                    </form> 
+            </center>
+        </section>
+        <!-- end of main content  -->
+        <footer  >
+            <hr>
+            <br />
+            <p style="text-align: center;">6100 Riverdale Ave Bronx, NY 10471</p>
+            <p style="text-align: center;">1(234)-567-8901</p>
+            <hr />
+        </footer>
+
+
+</body>
+</html>
